@@ -12,13 +12,13 @@ from langchain_core.output_parsers import StrOutputParser
 # ======================================================
 
 llm = ChatOllama(
-    model="qwen2.5:0.5b",   # works on 4GB RAM
+    model="qwen2.5:0.5b",
     temperature=0
 )
 
 
 # ======================================================
-# 2. JSON Extraction Helper (CRITICAL)
+# 2. JSON Extraction Helper
 # ======================================================
 
 def extract_json(text: str):
